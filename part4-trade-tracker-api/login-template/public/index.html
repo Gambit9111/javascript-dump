@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            transparent: 'transparent',
+            myblack: '#05040E',
+            myredlight: '#E11512',
+            myredmid: '#E11512',
+            myreddark: '#5C0908',
+            myblue: '#23254A',
+            mywhite: '#DFDFE5',
+            mygray: '#4E4E6A',
+            mypink: '#F75F5B',
+          }
+        }
+      }
+    }
+  </script>
+  <title>ZOPA VPS</title>
+</head>
+<body>
+<!-- div with a gradient red and blue background tailwind -->
+  <div class="h-screen w-screen items-center justify-center flex bg-gradient-to-br from-myreddark via-myblue to-myblack">
+    <div class="w-10/12 flex flex-col lg:flex-row h-[80vh] bg-gradient-to-tr from-myblack via-myblue to-myreddark px-12 py-8 lg:px-20 lg:py-12 gap-10 lg:gap-20 drop-shadow-2xl">
+
+
+
+
+      <div class="w-full lg:w-1/2 flex h-full lg:px-16">
+        <div class="w-full h-full flex flex-col bg-myblue rounded-xl gap-10 drop-shadow-2xl">
+          <div class="w-full h-[30px] flex flex-row items-center justify-between bg-mypink">
+            <div class="bg-myblack basis-1/4 text-center pt-1">
+              <p class="text-white text-sm font-bold">SIGN IN</p>
+            </div>
+            <div class="bg-myblack basis-1/4 text-center pt-1 h-full">
+              <p class="text-white text-sm font-bold">SIGN UP</p>
+            </div>
+            <div class="bg-myblack basis-2/4 text-center pt-1 h-full">
+              <p class="text-white text-sm font-bold">RECOVERY</p>
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-5">
+            <input placeholder="Username" class="py-3 bg-myblue border-2 border-myblack px-10 drop-shadow-2xl"></input>
+            <input placeholder="Password" class="py-3 bg-myblue border-2 border-myblack px-10 mb-10 drop-shadow-2xl"></input>
+            <button class="border-2 border-mywhite bg-myredlight text-mywhite px-20 rounded-sm hover:bg-mywhite hover:text-myredlight hover:border-myredlight drop-shadow-2xl">SIGN IN</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 flex flex-col h-full">
+        <div class="w-full h-[30vh] flex flex-col justify-center items-center">
+          <h1 class="text-mywhite text-2xl"> Welcome to Dlendo</h1>
+          <p class="text-mywhite text-center"> To stay connected with Dlendo please login with your credentials by entering email address and password.</p>
+        </div>
+        <div class="hidden lg:w-full lg:h-full lg:flex lg:drop-shadow-2xl lg:rounded-xl lg:bg-gradient-to-br from-myreddark via-myblue to-myblack items-center justify-center">
+          <div>
+            <h1 class="text-8xl text-mywhite">LOGO</h1>
+            <h1 class="text-mywhite text-6xl">DLENDO</h1>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</body>
+</html>
